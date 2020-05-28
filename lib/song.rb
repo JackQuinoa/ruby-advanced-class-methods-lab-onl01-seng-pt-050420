@@ -47,11 +47,12 @@ class Song
   end
   
   def self.new_from_filename(string)
-    binding.pry 
+     
     song = self.new
     @@all << song 
     song_array = []
     song_array << string.split(/[-.]/)
+    binding.pry
     song_array.pop 
     song.artist_name = song_array[0]
     song.name = song_array[1]  
