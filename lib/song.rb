@@ -46,8 +46,19 @@ class Song
     @@all.sort_by { |name| name.name }
   end
   
-  1] pry(Song)> song_array
-=> [["Thundercat ", " For Love I Come", "mp3"]]
+  def self.new_from_filename(string)
+     
+    song = self.new
+    @@all << song 
+    song_array = string.split(/[-.]/)
+  ## binding.pry
+    song_array.pop 
+    song.artist_name = song_array[0]
+    song.name = song_array[1]  
+    
+  end
+    
+    
     
     
     
