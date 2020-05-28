@@ -47,16 +47,12 @@ class Song
   end
   
   def self.new_from_filename(string)
-     
     song = self.new
     @@all << song 
-##  binding.pry 
     song_array = string.split(/ - /)
     song.artist_name = song_array[0]
-    
     song.name = song_array[1].split(".")[0]
-    
-   ## song.name = song_array[1].gsub(".mp3","")
+##song.name = song_array[1].gsub(".mp3","")
     song 
     
   end
