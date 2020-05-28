@@ -53,8 +53,8 @@ class Song
     song_array = []
     song_array << string.split(/[-.]/)
     song_array.pop 
-    song.artist_name = song_array[0]
-    song.name = song_array[1]  
+    self.artist_name = song_array[0]
+    self.name = song_array[1]  
     
   end
     
