@@ -47,7 +47,7 @@ class Song
   end
   
   def self.new_from_filename(string)
-    binding.pry 
+   # binding.pry 
     song = self.new
     @@all << song 
     song_array = []
