@@ -51,7 +51,7 @@ class Song
     song = self.new
     @@all << song 
     song_array = string.split(" - ",".")
-  ## binding.pry
+  binding.pry
     song_array.pop 
     song.artist_name = song_array[0]
     song.name = song_array[1]  
