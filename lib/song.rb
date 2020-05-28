@@ -50,9 +50,8 @@ class Song
      
     song = self.new
     @@all << song 
-  binding.pry 
-    song_array = string.split(/ - |./)
-    song_array.pop 
+##  binding.pry 
+    song_array = string.split(/ - /)
     song.artist_name = song_array[0]
     song.name = song_array[1].gsub(".mp3","")
     song 
