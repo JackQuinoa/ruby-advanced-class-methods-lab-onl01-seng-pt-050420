@@ -51,7 +51,7 @@ class Song
     song = self.new
     @@all << song 
     song_array = []
-    song_array << string.split(/"-."/)
+    song_array << string.split(/[-.]/)
     song_array.pop 
     song.artist_name = song_array[0]
     song.name = song_array[1]  
