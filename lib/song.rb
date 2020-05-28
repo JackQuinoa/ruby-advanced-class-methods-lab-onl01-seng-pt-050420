@@ -53,7 +53,10 @@ class Song
 ##  binding.pry 
     song_array = string.split(/ - /)
     song.artist_name = song_array[0]
-    song.name = song_array[1].gsub(".mp3","")
+    
+    song.name = info[1].split(".")[0]
+    
+   ## song.name = song_array[1].gsub(".mp3","")
     song 
     
   end
