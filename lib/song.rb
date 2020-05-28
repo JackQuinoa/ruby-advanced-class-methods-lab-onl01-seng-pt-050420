@@ -54,7 +54,7 @@ class Song
     song_array = string.split(/ - |./)
     song_array.pop 
     song.artist_name = song_array[0]
-    song.name = song_array[1]  
+    song.name = song_array[1].gsub 
     song 
     
   end
